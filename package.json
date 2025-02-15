@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.1",
     "@mui/joy": "^5.0.0-beta.51",
-    "@mui/material": "^6.4.1",
+    "@mui/material": "^6.4.4",
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "jspdf": "^2.5.2",

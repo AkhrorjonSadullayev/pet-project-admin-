@@ -170,6 +170,9 @@ export default function ProductsComponent() {
         if (data.success) {
           toast.success("Successfully added!");
           resetForm();
+          if (!selectId) {
+            setProducts((prevProducts) => [...prevProducts, data.todo]);  // Yangi qo‘shilgan todo'ni products ro‘yxatiga qo‘shish
+          }
         } else {
           toast.error(data.msg || "Failed to add todo.");
         }

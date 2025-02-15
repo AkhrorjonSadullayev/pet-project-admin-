@@ -100,7 +100,15 @@ function ColorSchemeToggle(props: IconButtonProps) {
   );
 }
 
-const customTheme = extendTheme({ defaultColorScheme: 'dark' });
+const customTheme = extendTheme({
+  colorSchemes: {
+    dark: {
+      palette: {
+        mode: 'dark',
+      },
+    },
+  },
+});
 
   return (
     <CssVarsProvider theme={customTheme} disableTransitionOnChange>
