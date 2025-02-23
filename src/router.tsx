@@ -49,43 +49,43 @@ const RouterComponent = () => {
       />
       <Route
         path="/dog"
-        element={isAuthenticated ? <DogComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <DogComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/cat"
-        element={isAuthenticated ? <CatComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <CatComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/rabbit"
-        element={isAuthenticated ? <RabbitComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <RabbitComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/fish"
-        element={isAuthenticated ? <FishComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <FishComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/parrot"
-        element={isAuthenticated ? <ParrotComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <ParrotComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/products"
-        element={isAuthenticated ? <ProductsComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <ProductsComponent /> : <Navigate to="/" />}
       />
       <Route
         path="/details/:id"
-        element={isAuthenticated ? <DetailsComponentFood /> : <Navigate to="/" />}
+        element={isAdmin ? <DetailsComponentFood /> : <Navigate to="/" />}
       />
       <Route
         path="/details-animal/:id"
-        element={isAuthenticated ? <DetailsComponentAnimal /> : <Navigate to="/" />}
+        element={isAdmin ? <DetailsComponentAnimal /> : <Navigate to="/" />}
       />
       <Route
         path="/chart"
-        element={isAuthenticated ? <ChartAnalyze /> : <Navigate to="/" />}
+        element={isAdmin ? <ChartAnalyze /> : <Navigate to="/" />}
       />
        <Route
         path="/test"
-        element={isAuthenticated ? <JoySignInSideTemplate /> : <Navigate to="/" />}
+        element={isAdmin ? <JoySignInSideTemplate /> : <Navigate to="/" />}
       />
     </Routes>
   );
