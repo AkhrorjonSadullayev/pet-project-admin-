@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import UsersComponent from "./scenes/users/user";
 import DogComponent from "./scenes/animals/Dog";
