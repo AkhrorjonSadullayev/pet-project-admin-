@@ -45,47 +45,47 @@ const RouterComponent = () => {
       <Route path="/" element={<SignIn />} />
       <Route
         path="/users"
-        element={isAdmin ? <UsersComponent /> : <UsersComponent/>}
+        element={<UsersComponent />}
       />
       <Route
         path="/dog"
-        element={isAdmin ? <DogComponent /> : <DogComponent/>}
+        element={<DogComponent/>}
       />
       <Route
         path="/cat"
-        element={isAdmin ? <CatComponent /> : <CatComponent/>}
+        element={<CatComponent/>}
       />
       <Route
         path="/rabbit"
-        element={isAdmin ? <RabbitComponent /> : <RabbitComponent/>}
+        element={<RabbitComponent/>}
       />
       <Route
         path="/fish"
-        element={isAdmin ? <FishComponent /> : <FishComponent/>}
+        element={<FishComponent/>}
       />
       <Route
         path="/parrot"
-        element={isAdmin ? <ParrotComponent /> : <ParrotComponent/>}
+        element={<ParrotComponent/>}
       />
       <Route
         path="/products"
-        element={isAdmin ? <ProductsComponent /> : <ProductsComponent/>}
+        element={<ProductsComponent/>}
       />
       <Route
         path="/details/:id"
-        element={isAdmin ? <DetailsComponentFood /> : <DetailsComponentFood/>}
+        element={<DetailsComponentFood/>}
       />
       <Route
         path="/details-animal/:id"
-        element={isAdmin ? <DetailsComponentAnimal /> : <DetailsComponentAnimal/>}
+        element={<DetailsComponentAnimal/>}
       />
       <Route
         path="/chart"
-        element={isAdmin ? <ChartAnalyze /> : <ChartAnalyze/>}
+        element={<ChartAnalyze/>}
       />
        <Route
         path="/test"
-        element={isAdmin ? <JoySignInSideTemplate /> : <JoySignInSideTemplate/>}
+        element={<JoySignInSideTemplate/>}
       />
     </Routes>
   );
