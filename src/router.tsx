@@ -20,22 +20,26 @@ const RouterComponent = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) return;
-
+  
     const loadJwtDecode = async () => {
       try {
         const { jwtDecode } = await import("jwt-decode");
         const decodedToken: any = jwtDecode(token);
-        console.log(decodedToken);
-
+        console.log("Token decoded:", decodedToken);
+  
         setIsAuthenticated(true);
         setIsAdmin(decodedToken.roles?.includes("ADMIN"));
+  
+        // TypeScript xatolarini oldini olish uchun
+        console.log(isAuthenticated, isAdmin);
       } catch (error) {
         console.error("Invalid token", error);
       }
     };
-
+  
     loadJwtDecode();
   }, []);
+  
 
   return (
     <Routes>
