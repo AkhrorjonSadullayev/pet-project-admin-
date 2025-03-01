@@ -45,47 +45,47 @@ const RouterComponent = () => {
       <Route path="/" element={<SignIn />} />
       <Route
         path="/users"
-        element={isAuthenticated && isAdmin ? <UsersComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <UsersComponent /> : <UsersComponent/>}
       />
       <Route
         path="/dog"
-        element={isAdmin ? <DogComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <DogComponent /> : <DogComponent/>}
       />
       <Route
         path="/cat"
-        element={isAdmin ? <CatComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <CatComponent /> : <CatComponent/>}
       />
       <Route
         path="/rabbit"
-        element={isAdmin ? <RabbitComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <RabbitComponent /> : <RabbitComponent/>}
       />
       <Route
         path="/fish"
-        element={isAdmin ? <FishComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <FishComponent /> : <FishComponent/>}
       />
       <Route
         path="/parrot"
-        element={isAdmin ? <ParrotComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <ParrotComponent /> : <ParrotComponent/>}
       />
       <Route
         path="/products"
-        element={isAdmin ? <ProductsComponent /> : <Navigate to="/" />}
+        element={isAdmin ? <ProductsComponent /> : <ProductsComponent/>}
       />
       <Route
         path="/details/:id"
-        element={isAdmin ? <DetailsComponentFood /> : <Navigate to="/" />}
+        element={isAdmin ? <DetailsComponentFood /> : <DetailsComponentFood/>}
       />
       <Route
         path="/details-animal/:id"
-        element={isAdmin ? <DetailsComponentAnimal /> : <Navigate to="/" />}
+        element={isAdmin ? <DetailsComponentAnimal /> : <DetailsComponentAnimal/>}
       />
       <Route
         path="/chart"
-        element={isAdmin ? <ChartAnalyze /> : <Navigate to="/" />}
+        element={isAdmin ? <ChartAnalyze /> : <ChartAnalyze/>}
       />
        <Route
         path="/test"
-        element={isAdmin ? <JoySignInSideTemplate /> : <Navigate to="/" />}
+        element={isAdmin ? <JoySignInSideTemplate /> : <JoySignInSideTemplate/>}
       />
     </Routes>
   );
